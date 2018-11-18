@@ -1,66 +1,63 @@
 <template>
-  <section class="container">
-    <div>
-      <logo/>
-      <h1 class="title">
-        portfolio
-      </h1>
-      <h2 class="subtitle">
-        portfolio
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
+  <section class="hero is-fullheight has-text-centered">
+    <div class="hero-body columns">
+      <div class="column">
+        <img src="~/assets/images/avatar.png" alt="emsk" class="avatar">
+        <h1 class="title">Masaki Enjo</h1>
+        <h2 class="subtitle">Software Engineer</h2>
+        <div class="has-text-centered social">
+          <a href="https://github.com/emsk">GitHub</a>
+          <a href="https://qiita.com/emsk">Qiita</a>
+          <a href="https://smallhackcafe.tumblr.com">Tumblr</a>
+        </div>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
 export default {
-  components: {
-    Logo
+  head: {
+    title: 'Masaki Enjo'
   }
 }
 </script>
 
 <style>
+.hero.is-fullheight {
+  min-height: calc(100vh - 5rem);
+}
 
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.avatar {
+  border-radius: 50%;
+  margin-bottom: 20px;
+  overflow: hidden;
+  width: 90px;
 }
 
 .title {
+  color: #35495e;
+  display: block;
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
+  font-size: 1.25rem;
   font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 .subtitle {
-  font-weight: 300;
-  font-size: 42px;
   color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+  font-size: 0.75rem;
+  font-weight: 300;
+  letter-spacing: 1px;
 }
 
-.links {
-  padding-top: 15px;
+.social {
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+}
+
+.social a {
+  margin: 0 .25rem;
 }
 </style>

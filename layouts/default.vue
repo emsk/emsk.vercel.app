@@ -1,55 +1,70 @@
 <template>
-  <div>
-    <nuxt/>
-  </div>
+  <section class="container">
+    <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <span class="navbar-item">Masaki Enjo</span>
+        <a role="button" id="navbar-burger" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbar-menu" class="navbar-menu">
+        <div class="navbar-start">
+          <nuxt-link to="/" class="navbar-item is-tab">Home</nuxt-link>
+          <nuxt-link to="/code" class="navbar-item is-tab">Code</nuxt-link>
+          <nuxt-link to="/apps" class="navbar-item is-tab">Apps</nuxt-link>
+          <nuxt-link to="/writings" class="navbar-item is-tab">Writings</nuxt-link>
+        </div>
+      </div>
+    </nav>
+
+    <section>
+      <nuxt></nuxt>
+    </section>
+  </section>
 </template>
 
+<script>
+export default {
+  mounted() {
+    document.addEventListener('DOMContentLoaded', () => {
+      const navbarBurger = document.getElementById('navbar-burger');
+      navbarBurger.addEventListener('click', () => {
+        navbarBurger.classList.toggle('is-active');
+        document.getElementById('navbar-menu').classList.toggle('is-active');
+      });
+
+      const navbarBurgerItems = document.querySelectorAll('.navbar-item');
+      navbarBurgerItems.forEach(element => {
+        element.addEventListener('click', () => {
+          navbarBurger.classList.remove('is-active');
+          document.getElementById('navbar-menu').classList.remove('is-active');
+        });
+      });
+    });
+  }
+};
+</script>
+
 <style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+nav {
+  font-size: 0.75rem;
+  letter-spacing: 1px;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
+.navbar-item {
+  line-height: 3.25rem;
+  padding: 0 .75rem;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+.navbar-item.is-tab {
+  padding-bottom: 0;
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.navbar-item.is-tab.nuxt-link-exact-active {
+  border-bottom: 1px solid #3273dc;
+  color: #3273dc;
 }
 </style>
