@@ -19,9 +19,7 @@ export default {
     title: 'Masaki Enjo - Writings'
   },
   async asyncData () {
-    const url = `https://qiita.com/api/v2/authenticated_user/items`;
-    const config = { headers: { 'Authorization': `Bearer ${process.env.QIITA_TOKEN}` } };
-    const { data: items } = await axios.get(url, config);
+    const { data: items } = await axios.get(`${process.env.SERVER_URL}/api/writings`);
     return { items };
   }
 };
