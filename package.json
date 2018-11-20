@@ -1,7 +1,7 @@
 {
-  "name": "portfolio",
+  "name": "emsk.now.sh",
   "version": "1.0.0",
-  "description": "portfolio",
+  "description": "emsk's website",
   "author": "emsk",
   "private": true,
   "scripts": {
