@@ -9,6 +9,8 @@
           <a href="https://github.com/emsk">GitHub</a>
           <a href="https://qiita.com/emsk">Qiita</a>
           <a href="https://smallhackcafe.tumblr.com">Tumblr</a>
+          <a href="https://rubygems.org/profiles/emsk">RubyGems</a>
+          <a href="https://www.npmjs.com/~emsk">npm</a>
         </div>
       </div>
     </div>
