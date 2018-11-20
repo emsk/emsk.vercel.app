@@ -10,7 +10,7 @@ app.get('/code', async (req, res) => {
   res.send(repos);
 });
 
-app.get('/writings', async (req, res) => {
+app.get('/posts', async (req, res) => {
   const url = `https://qiita.com/api/v2/authenticated_user/items`;
   const config = { headers: { 'Authorization': `Bearer ${process.env.QIITA_TOKEN}` } };
   const { data: items } = await axios.get(url, config);

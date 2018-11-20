@@ -16,10 +16,10 @@ const axios = require('axios');
 
 export default {
   head: {
-    title: 'Masaki Enjo - Writings'
+    title: 'Masaki Enjo - Posts'
   },
   async asyncData () {
-    const { data: items } = await axios.get(`${process.env.SERVER_URL}/api/writings`);
+    const { data: items } = await axios.get(`${process.env.SERVER_URL}/api/posts`);
     return { items };
   }
 };

@@ -15,7 +15,7 @@
           <nuxt-link to="/" class="navbar-item is-tab">Home</nuxt-link>
           <nuxt-link to="/code" class="navbar-item is-tab">Code</nuxt-link>
           <nuxt-link to="/apps" class="navbar-item is-tab">Apps</nuxt-link>
-          <nuxt-link to="/writings" class="navbar-item is-tab">Writings</nuxt-link>
+          <nuxt-link to="/posts" class="navbar-item is-tab">Posts</nuxt-link>
         </div>
       </div>
     </nav>
