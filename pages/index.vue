@@ -22,7 +22,7 @@ export default {
   head: {
     title: 'Masaki Enjo'
   }
-}
+};
 </script>
 
 <style>
