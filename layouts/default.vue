@@ -3,14 +3,14 @@
     <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <span class="navbar-item">Masaki Enjo</span>
-        <a role="button" id="navbar-burger" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+        <a role="button" id="navbar-burger" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu" @click="toggleNavbar" :class="{ 'is-active': isActive }">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </a>
       </div>
 
-      <div id="navbar-menu" class="navbar-menu">
+      <div id="navbar-menu" class="navbar-menu" @click="toggleNavbar" :class="{ 'is-active': isActive }">
         <div class="navbar-start">
           <nuxt-link to="/" class="navbar-item is-tab">Home</nuxt-link>
           <nuxt-link to="/code" class="navbar-item is-tab">Code</nuxt-link>
@@ -28,22 +28,13 @@
 
 <script>
 export default {
-  mounted() {
-    document.addEventListener('DOMContentLoaded', () => {
-      const navbarBurger = document.getElementById('navbar-burger');
-      navbarBurger.addEventListener('click', () => {
-        navbarBurger.classList.toggle('is-active');
-        document.getElementById('navbar-menu').classList.toggle('is-active');
-      });
-
-      const navbarBurgerItems = document.querySelectorAll('.navbar-item');
-      navbarBurgerItems.forEach(element => {
-        element.addEventListener('click', () => {
-          navbarBurger.classList.remove('is-active');
-          document.getElementById('navbar-menu').classList.remove('is-active');
-        });
-      });
-    });
+  data () {
+    return { isActive: false };
+  },
+  methods: {
+    toggleNavbar () {
+      this.isActive = !this.isActive;
+    }
   }
 };
 </script>
