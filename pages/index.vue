@@ -1,16 +1,20 @@
 <template>
   <section class="hero is-fullheight has-text-centered">
-    <div class="hero-body columns">
-      <div class="column">
-        <img src="~/assets/images/avatar.png" alt="emsk" class="avatar">
-        <h1 class="title">Masaki Enjo</h1>
-        <h2 class="subtitle">Software Engineer</h2>
-        <div class="has-text-centered social">
-          <a href="https://github.com/emsk">GitHub</a>
-          <a href="https://qiita.com/emsk">Qiita</a>
-          <a href="https://smallhackcafe.tumblr.com">Tumblr</a>
-          <a href="https://rubygems.org/profiles/emsk">RubyGems</a>
-          <a href="https://www.npmjs.com/~emsk">npm</a>
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <img src="~/assets/images/avatar.png" alt="emsk" class="avatar">
+            <h1 class="title">Masaki Enjo</h1>
+            <h2 class="subtitle">Software Engineer</h2>
+            <div class="has-text-centered social">
+              <a href="https://github.com/emsk">GitHub</a>
+              <a href="https://qiita.com/emsk">Qiita</a>
+              <a href="https://smallhackcafe.tumblr.com">Tumblr</a>
+              <a href="https://rubygems.org/profiles/emsk">RubyGems</a>
+              <a href="https://www.npmjs.com/~emsk">npm</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
