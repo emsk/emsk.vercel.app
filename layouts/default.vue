@@ -40,6 +40,10 @@ export default {
 </script>
 
 <style>
+body {
+  word-wrap: break-word;
+}
+
 nav {
   font-size: 0.75rem;
   letter-spacing: 1px;
