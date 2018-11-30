@@ -62,4 +62,11 @@ nav {
   border-bottom: 1px solid #3273dc;
   color: #3273dc;
 }
+
+@media screen and (max-width: 1087px) {
+  .navbar-item.is-tab.nuxt-link-exact-active,
+  .navbar-item.is-tab:hover {
+    border-bottom-color: transparent;
+  }
+}
 </style>
