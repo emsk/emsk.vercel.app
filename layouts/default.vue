@@ -10,7 +10,7 @@
         </a>
       </div>
 
-      <div id="navbar-menu" class="navbar-menu" @click="toggleNavbar" :class="{ 'is-active': isActive }">
+      <div id="navbar-menu" class="navbar-menu" @click="closeNavbar" :class="{ 'is-active': isActive }">
         <div class="navbar-start">
           <nuxt-link to="/" class="navbar-item is-tab">Home</nuxt-link>
           <nuxt-link to="/code" class="navbar-item is-tab">Code</nuxt-link>
@@ -34,6 +34,9 @@ export default {
   methods: {
     toggleNavbar () {
       this.isActive = !this.isActive;
+    },
+    closeNavbar () {
+      this.isActive = false;
     }
   }
 };
