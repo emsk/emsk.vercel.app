@@ -4,7 +4,7 @@
       <div class="column is-full" v-for="item in items" :key="item.id">
         <div class="box">
           <a :href="item.url" class="item-title">{{item.title}}</a>
-          <div class="item-updated-at">{{item.updated_at}}</div>
+          <div class="item-body">{{item.updated_at}}</div>
         </div>
       </div>
     </div>
@@ -24,15 +24,3 @@ export default {
   }
 };
 </script>
-
-<style>
-.item-title {
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-.item-updated-at {
-  font-size: 0.75rem;
-  letter-spacing: 1px;
-}
-</style>

@@ -1,0 +1,15 @@
+.item-title {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.item-body {
+  font-size: .75rem;
+  letter-spacing: 1px;
+}
+
+.tag {
+  font-size: .75rem;
+  letter-spacing: 1px;
+  margin-top: 6px;
+}

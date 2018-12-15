@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
+    <nav class="navbar has-shadow item-body" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <span class="navbar-item">Masaki Enjo</span>
         <a role="button" id="navbar-burger" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu" @click="toggleNavbar" :class="{ 'is-active': isActive }">
@@ -45,11 +45,6 @@ export default {
 <style>
 body {
   word-wrap: break-word;
-}
-
-nav {
-  font-size: 0.75rem;
-  letter-spacing: 1px;
 }
 
 .navbar-item {
