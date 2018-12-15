@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <nav class="navbar has-shadow item-body" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-fixed-top container has-shadow item-body" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <span class="navbar-item">Masaki Enjo</span>
         <a role="button" id="navbar-burger" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu" @click="toggleNavbar" :class="{ 'is-active': isActive }">
@@ -28,6 +28,11 @@
 
 <script>
 export default {
+  head: {
+    bodyAttrs: {
+      class: 'has-navbar-fixed-top'
+    }
+  },
   data () {
     return { isActive: false };
   },
