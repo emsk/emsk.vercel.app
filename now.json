@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "alias": "emsk",
   "env": {
     "GITHUB_TOKEN": "@github-token",
