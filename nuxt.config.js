@@ -78,6 +78,5 @@ module.exports = {
   },
 
   serverMiddleware: [
-    '~/api/index'
   ]
 };
