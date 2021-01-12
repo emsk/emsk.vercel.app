@@ -6,10 +6,5 @@
       "use": "@nuxtjs/vercel-builder"
     }
   ],
-  "alias": "emsk",
-  "env": {
-    "GITHUB_TOKEN": "@github-token",
-    "QIITA_TOKEN": "@qiita-token",
-    "SERVER_URL": "https://emsk.now.sh"
-  }
+  "alias": "emsk"
 }
