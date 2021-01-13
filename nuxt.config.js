@@ -78,5 +78,7 @@ module.exports = {
   },
 
   serverMiddleware: [
+    { path: '/api/code', handler: '~/api/code' },
+    { path: '/api/posts', handler: '~/api/posts' }
   ]
 };
