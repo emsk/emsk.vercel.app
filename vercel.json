@@ -8,6 +8,5 @@
         "serverFiles": ["api/**"]
       }
     }
-  ],
-  "alias": "emsk"
+  ]
 }
