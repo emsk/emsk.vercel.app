@@ -1,8 +1,8 @@
-# emsk.now.sh
+# emsk.vercel.app
 
-emsk's website that works on https://emsk.now.sh
+emsk's website that works on https://emsk.vercel.app
 
-<a href="https://emsk.now.sh"><img src="screenshot.png" width="600"></a>
+<a href="https://emsk.vercel.app"><img src="screenshot.png" width="600"></a>
 
 ## Build Setup
 
