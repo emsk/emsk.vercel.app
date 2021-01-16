@@ -73,10 +73,6 @@ module.exports = {
     }
   },
 
-  env: {
-    SERVER_URL: process.env.VERCEL_URL || 'http://localhost:3000'
-  },
-
   serverMiddleware: [
     { path: '/api/code', handler: '~/api/code' },
     { path: '/api/posts', handler: '~/api/posts' }

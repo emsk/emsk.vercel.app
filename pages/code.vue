@@ -20,7 +20,7 @@ export default {
     title: 'Masaki Enjo - Code'
   },
   async asyncData () {
-    const { data: repos } = await axios.get(`${process.env.SERVER_URL}/api/code`);
+    const { data: repos } = await axios.get('/api/code');
     return { repos };
   },
   computed: {

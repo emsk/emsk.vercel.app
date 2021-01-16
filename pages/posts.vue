@@ -19,7 +19,7 @@ export default {
     title: 'Masaki Enjo - Posts'
   },
   async asyncData () {
-    const { data: items } = await axios.get(`${process.env.SERVER_URL}/api/posts`);
+    const { data: items } = await axios.get('/api/posts');
     return { items };
   }
 };
